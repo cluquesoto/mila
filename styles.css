@@ -215,7 +215,7 @@ img { max-width: 100%; display: block; }
    ============================================ */
 .hero-tagline {
   margin: 0;
-  padding: 20px 0 16px;
+  padding: 8px 0 4px;
   font-family: var(--font-sans);
   font-weight: 400;
   letter-spacing: -0.03em;
@@ -232,21 +232,21 @@ img { max-width: 100%; display: block; }
   position: relative;
   background: var(--burgundy);
   overflow: hidden;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 7;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .hero__clover {
-  width: 220px;
-  height: 220px;
+  width: 28%;
+  aspect-ratio: 1;
   position: relative;
 }
 
 .hero__clover-circle {
-  width: 100px;
-  height: 100px;
+  width: 48%;
+  aspect-ratio: 1;
   border-radius: 50%;
   position: absolute;
   filter: blur(8px);
@@ -271,16 +271,17 @@ img { max-width: 100%; display: block; }
 
 .hero__label {
   position: absolute;
-  font-family: var(--font-serif);
-  font-size: 11px;
+  font-family: var(--font-sans);
+  font-size: 9px;
   font-weight: 400;
   font-style: italic;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
   color: var(--yellow);
 }
 
-.hero__label--left { top: 50%; left: 32px; transform: translateY(-50%); }
-.hero__label--right { top: 50%; right: 32px; transform: translateY(-50%); }
+.hero__label--left { top: 50%; left: 24px; transform: translateY(-50%); }
+.hero__label--right { top: 50%; right: 24px; transform: translateY(-50%); }
 
 /* ============================================
    SECTION DIVIDERS & TITLES
@@ -291,15 +292,15 @@ img { max-width: 100%; display: block; }
 
 .section-title {
   font-family: var(--font-sans);
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-align: center;
-  margin: 32px var(--pad) 20px;
+  margin: 14px var(--pad) 8px;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 16px;
 }
 
 .section-title::before,
@@ -314,17 +315,17 @@ img { max-width: 100%; display: block; }
    ARCHIVO GRID (homepage)
    ============================================ */
 .archivo {
-  padding: 20px var(--pad) 0;
+  padding: 4px var(--pad) 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  gap: 12px;
 }
 
 .archivo__card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   cursor: pointer;
   transition: opacity 0.2s;
   text-align: center;
@@ -334,7 +335,7 @@ img { max-width: 100%; display: block; }
 
 .archivo__card-img {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 0;
   background: var(--cream);
@@ -352,20 +353,20 @@ img { max-width: 100%; display: block; }
 
 .archivo__card-category {
   font-family: var(--font-sans);
-  font-size: 9px;
-  font-weight: 600;
+  font-size: 8px;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--pink);
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .archivo__card-title {
   font-family: var(--font-sans);
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 400;
   color: var(--black);
-  line-height: 1.4;
+  line-height: 1.35;
 }
 
 /* ============================================
@@ -373,7 +374,7 @@ img { max-width: 100%; display: block; }
    ============================================ */
 .calendario-section {
   background: var(--yellow);
-  padding: 0 var(--pad) 40px;
+  padding: 0 var(--pad) 24px;
 }
 
 .calendario {
@@ -383,18 +384,18 @@ img { max-width: 100%; display: block; }
 }
 
 .calendario__poster {
-  padding: 24px 24px 24px 0;
+  padding: 16px 20px 16px 0;
   color: var(--black);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 360px;
+  min-height: 280px;
 }
 
 .calendario__poster-script {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: clamp(40px, 6vw, 72px);
+  font-size: clamp(32px, 5vw, 56px);
   font-weight: 300;
   line-height: 0.9;
 }
@@ -402,27 +403,27 @@ img { max-width: 100%; display: block; }
 .calendario__poster-location {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: clamp(24px, 3.5vw, 44px);
+  font-size: clamp(20px, 3vw, 36px);
   font-weight: 400;
   line-height: 1.1;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .calendario__poster-dates {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: clamp(16px, 2vw, 26px);
+  font-size: clamp(14px, 1.8vw, 22px);
   font-weight: 400;
   line-height: 1.2;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .calendario__poster-venue {
   font-family: var(--font-serif);
   font-style: italic;
-  font-size: clamp(12px, 1.4vw, 18px);
+  font-size: clamp(10px, 1.2vw, 16px);
   font-weight: 300;
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
 .calendario__poster-venue small {
@@ -441,14 +442,14 @@ img { max-width: 100%; display: block; }
 .calendario__info {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: 24px 0 0 24px;
+  gap: 12px;
+  padding: 16px 0 0 20px;
   border-left: 1px solid rgba(0,0,0,0.1);
 }
 
 .calendario__info-header {
   font-family: var(--font-sans);
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -463,9 +464,9 @@ img { max-width: 100%; display: block; }
 
 .calendario__brands span {
   font-family: var(--font-sans);
-  font-size: 10px;
+  font-size: 9px;
   font-weight: 500;
-  line-height: 1.9;
+  line-height: 1.8;
   text-transform: uppercase;
   letter-spacing: 0.02em;
 }
@@ -476,7 +477,7 @@ img { max-width: 100%; display: block; }
 .footer-black {
   background: var(--black);
   color: #fff;
-  padding: 24px var(--pad) 28px;
+  padding: 16px var(--pad) 20px;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
