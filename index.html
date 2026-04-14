@@ -111,15 +111,15 @@
       var el = document.querySelector('.hero-tagline');
       if (!el) return;
       var span = document.createElement('span');
-      span.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;font:400 100px/1 ' + getComputedStyle(el).fontFamily + ';letter-spacing:-0.03em;text-transform:uppercase';
+      span.style.cssText = 'position:absolute;visibility:hidden;white-space:nowrap;font:400 100px/1 "Neue Haas Grotesk","Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:-0.03em;text-transform:uppercase';
       span.textContent = el.textContent;
       document.body.appendChild(span);
       var textW = span.offsetWidth;
       document.body.removeChild(span);
       var targetW = window.innerWidth;
-      el.style.fontSize = (targetW / textW * 100) + 'px';
+      el.style.fontSize = (targetW / textW * 100) * 1.01 + 'px';
     }
-    fitTagline();
+    document.fonts.ready.then(fitTagline);
     window.addEventListener('resize', fitTagline);
   </script>
 </body>

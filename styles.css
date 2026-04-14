@@ -231,22 +231,23 @@ img { max-width: 100%; display: block; }
   height: 75%;
   width: auto;
   object-fit: contain;
-  animation: clover-pulse 6s ease-in-out infinite;
+  animation: clover-hue 12s ease-in-out infinite;
 }
 
-@keyframes clover-pulse {
-  0%   { filter: blur(6px); }
-  50%  { filter: blur(0px); }
-  100% { filter: blur(6px); }
+@keyframes clover-hue {
+  0%   { filter: hue-rotate(0deg) saturate(1); }
+  33%  { filter: hue-rotate(60deg) saturate(1.2); }
+  66%  { filter: hue-rotate(-40deg) saturate(1.1); }
+  100% { filter: hue-rotate(0deg) saturate(1); }
 }
 
 .hero__label {
   position: absolute;
   font-family: var(--font-sans);
-  font-size: 10px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 500;
   font-style: italic;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--yellow);
 }
