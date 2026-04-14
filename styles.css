@@ -228,17 +228,16 @@ img { max-width: 100%; display: block; }
 }
 
 .hero__clover-img {
-  height: 75%;
+  height: 130%;
   width: auto;
   object-fit: contain;
-  animation: clover-hue 12s ease-in-out infinite;
+  animation: clover-spin 30s linear infinite;
 }
 
-@keyframes clover-hue {
-  0%   { filter: hue-rotate(0deg) saturate(1); }
-  33%  { filter: hue-rotate(60deg) saturate(1.2); }
-  66%  { filter: hue-rotate(-40deg) saturate(1.1); }
-  100% { filter: hue-rotate(0deg) saturate(1); }
+@keyframes clover-spin {
+  0%   { transform: rotate(0deg) scale(1); }
+  50%  { transform: rotate(180deg) scale(1.05); }
+  100% { transform: rotate(360deg) scale(1); }
 }
 
 .hero__label {
