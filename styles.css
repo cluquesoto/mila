@@ -3,7 +3,106 @@
    Brand Website Styles (2026)
    ============================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap');
+/* --- Neue Haas Grotesk Display Pro --- */
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('fonts/NHaasGrotesk/NHaasGroteskDSPro-55Rg.woff2') format('woff2'),
+       url('fonts/NHaasGrotesk/NHaasGroteskDSPro-55Rg.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('fonts/NHaasGrotesk/NHaasGroteskDSPro-56It.woff2') format('woff2'),
+       url('fonts/NHaasGrotesk/NHaasGroteskDSPro-56It.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('fonts/NHaasGrotesk/NHaasGroteskDSPro-65Md.woff2') format('woff2'),
+       url('fonts/NHaasGrotesk/NHaasGroteskDSPro-65Md.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('fonts/NHaasGrotesk/NHaasGroteskDSPro-66MdIt.woff2') format('woff2'),
+       url('fonts/NHaasGrotesk/NHaasGroteskDSPro-66MdIt.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Neue Haas Grotesk';
+  src: url('fonts/NHaasGrotesk/NHaasGroteskDSPro-95Blk.woff2') format('woff2'),
+       url('fonts/NHaasGrotesk/NHaasGroteskDSPro-95Blk.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- Freight Display Compressed Pro --- */
+@font-face {
+  font-family: 'Freight Display';
+  src: url('fonts/FreightDisplay/FreightDisplayCompressed-Light.woff2') format('woff2'),
+       url('fonts/FreightDisplay/FreightDisplayCompressed-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freight Display';
+  src: url('fonts/FreightDisplay/FreightDisplayCompressed-LightItalic.woff2') format('woff2'),
+       url('fonts/FreightDisplay/FreightDisplayCompressed-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freight Display';
+  src: url('fonts/FreightDisplay/FreightDisplayCompressed-Book.woff2') format('woff2'),
+       url('fonts/FreightDisplay/FreightDisplayCompressed-Book.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freight Display';
+  src: url('fonts/FreightDisplay/FreightDisplayCompressed-BookItalic.woff2') format('woff2'),
+       url('fonts/FreightDisplay/FreightDisplayCompressed-BookItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freight Display';
+  src: url('fonts/FreightDisplay/FreightDisplayCompressed-Medium.woff2') format('woff2'),
+       url('fonts/FreightDisplay/FreightDisplayCompressed-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Freight Display';
+  src: url('fonts/FreightDisplay/FreightDisplayCompressed-MediumItalic.woff2') format('woff2'),
+       url('fonts/FreightDisplay/FreightDisplayCompressed-MediumItalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
 
 :root {
   --yellow: #FFFEAC;
@@ -16,8 +115,8 @@
   --blue: #638DB8;
   --gray: #605F5B;
   --lavender: #9582B8;
-  --font-sans: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-sans: 'Neue Haas Grotesk', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-serif: 'Freight Display', Georgia, 'Times New Roman', serif;
   --pad: 32px;
 }
 
