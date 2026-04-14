@@ -219,7 +219,7 @@ img { max-width: 100%; display: block; }
 .hero {
   margin: 0;
   position: relative;
-  background: var(--burgundy);
+  background: #4C2015;
   overflow: hidden;
   aspect-ratio: 16 / 7;
   display: flex;
