@@ -1,0 +1,43 @@
+# MILA — Made in Latin America
+
+> MILA is a cultural fashion platform and living archive of Latin American fashion. Founded in 2026, MILA curates editorials, events, and brand collaborations that celebrate Latin American design, designers, and identity.
+
+## What MILA Does
+
+- **Cultural Archive**: Editorial content exploring the intersection of Latin American identity, art, and fashion
+- **Fashion Curation**: Editorials, lookbooks, and profiles of emerging and established Latin American brands
+- **IRL Events**: Pop-ups and conversatorios (panel discussions) connecting fashion communities across Latin America
+- **Brand Collaborations**: MILA Studio orchestrates creative partnerships between Latin American brands
+
+## Site Pages
+
+- [Home](https://mila-xi-six.vercel.app/) — Main landing page with the archivo (archive grid), calendario (event calendar), and brand directory
+- [Culture](https://mila-xi-six.vercel.app/culture.html) — Cultura & Contexto: interviews, essays, and analysis connecting fashion with identity, territory, tradition, and community
+- [Fashion](https://mila-xi-six.vercel.app/fashion.html) — Editorials, lookbooks, brand profiles, and drops from Latin American designers
+- [RSVP](https://mila-xi-six.vercel.app/rsvp.html) — Upcoming events including pop-ups and conversatorios
+- [Studio](https://mila-xi-six.vercel.app/studio.html) — MILA-orchestrated brand collaborations and creative partnerships
+
+## Key Upcoming Events
+
+- **Pop-Up Panama** — April 20–23, 2026 at MAC Panamá (Museo de Arte Moderno). A curated showcase featuring 30 Latin American fashion brands.
+- **Pop-Up Medellín** — June 12–14, 2026. Location to be confirmed.
+- **Pop-Up Ciudad de México** — September 2026. Location to be confirmed.
+
+## Featured Brand Collaborations (MILA Studio)
+
+- **Sunset the Journey × María Riba** — "Table For Two": a creative cross between fashion and design
+- **ZUT × KITH** — "Craft, Heritage & Global Presence": from La Guajira, Colombia to one of the world's most influential concept stores
+- **Mercedes Salazar × Bahama Mama** — "Ancestral meets Tropical": Colombian artisanal jewelry meets Caribbean resort wear
+- **Sixxta × Flabelus** — "Street meets Craft": urban energy from Bucaramanga crossed with Spanish artisanal footwear
+
+## Participating Brands
+
+San Malo, Pájaro Limón, Sixxta, Sunset the Journey, Casabana, Crub Crub, Eme y Jota, Flabelus, Macondia, Maraí, Mercedes Salazar, Sophia Lerner, Teresa, Zereno, ZUT, Ribot, Vale Rubio, Gal, Hipnos, Bahía, Nicole Cochon, Anca Ravelo, Legare, Amarante, Etérea, Bahama Mama, Casalea, Eloísa, Nawa, Carlita
+
+## About
+
+MILA stands for "Made in Latin America." The platform was built from the 2026 Brand Book by Proyecto Formato. It operates as a cultural fashion platform — not just a media outlet, not just a guide — but a space where fashion is thought about, explained, and experienced.
+
+Languages: Spanish (primary content), English (descriptions and international reach)
+Domain: madeinlatinamerica.com (pending DNS connection)
+Current URL: https://mila-xi-six.vercel.app/

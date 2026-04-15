@@ -4,6 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MILA — Made in Latin America</title>
+  <meta name="description" content="MILA is a cultural fashion platform and living archive celebrating Latin American design, designers, and identity.">
+  <link rel="canonical" href="https://mila-xi-six.vercel.app/">
+  <link rel="alternate" hreflang="es" href="https://mila-xi-six.vercel.app/">
+  <link rel="alternate" hreflang="x-default" href="https://mila-xi-six.vercel.app/">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="MILA — Made in Latin America">
+  <meta property="og:description" content="MILA is a cultural fashion platform and living archive celebrating Latin American design, designers, and identity.">
+  <meta property="og:url" content="https://mila-xi-six.vercel.app/">
+  <meta property="og:image" content="https://mila-xi-six.vercel.app/assets/logos/hero_crop.png">
+  <meta property="og:locale" content="es_LA">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:site_name" content="MILA">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MILA — Made in Latin America">
+  <meta name="twitter:description" content="MILA is a cultural fashion platform and living archive celebrating Latin American design, designers, and identity.">
+  <meta name="twitter:image" content="https://mila-xi-six.vercel.app/assets/logos/hero_crop.png">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/logos/brandbook_p12.png">
+  <link rel="apple-touch-icon" href="assets/logos/brandbook_p12.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,6 +43,7 @@
     </ul>
   </nav>
 
+  <main>
   <h1 class="hero-tagline">MADE IN LATIN AMERICA</h1>
 
   <section class="hero">
@@ -89,6 +111,7 @@
       </div>
     </div>
   </section>
+  </main>
 
   <footer class="footer-black">
     <div class="footer-black__left">
@@ -105,6 +128,44 @@
       <span class="footer-black__tagline">Made in Latin America</span>
     </div>
   </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://mila-xi-six.vercel.app/#organization",
+        "name": "MILA",
+        "alternateName": "Made in Latin America",
+        "url": "https://mila-xi-six.vercel.app/",
+        "logo": "https://mila-xi-six.vercel.app/assets/logo-black.png",
+        "description": "Cultural fashion platform and living archive of Latin American fashion. MILA curates editorials, events, and brand collaborations celebrating Latin American design and identity.",
+        "foundingDate": "2026",
+        "knowsAbout": ["Latin American fashion", "Latin American design", "cultural fashion", "emerging designers", "fashion curation", "brand collaborations"],
+        "areaServed": "Latin America"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://mila-xi-six.vercel.app/#website",
+        "name": "MILA — Made in Latin America",
+        "url": "https://mila-xi-six.vercel.app/",
+        "publisher": { "@id": "https://mila-xi-six.vercel.app/#organization" },
+        "inLanguage": ["es", "en"],
+        "description": "A cultural fashion platform and living archive celebrating Latin American design, designers, and identity."
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://mila-xi-six.vercel.app/",
+        "name": "MILA — Made in Latin America",
+        "url": "https://mila-xi-six.vercel.app/",
+        "isPartOf": { "@id": "https://mila-xi-six.vercel.app/#website" },
+        "about": { "@id": "https://mila-xi-six.vercel.app/#organization" },
+        "inLanguage": "es"
+      }
+    ]
+  }
+  </script>
 
   <script>
     function fitTagline() {
