@@ -117,7 +117,9 @@
       var textW = span.offsetWidth;
       document.body.removeChild(span);
       var targetW = window.innerWidth;
-      el.style.fontSize = (targetW / textW * 100) * 1.01 + 'px';
+      var pad = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--pad')) || 32;
+      var availW = targetW - pad * 2;
+      el.style.fontSize = (availW / textW * 100) + 'px';
     }
     document.fonts.ready.then(fitTagline);
     window.addEventListener('resize', fitTagline);
