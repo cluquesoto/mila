@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="page-transition"></div>
 
   <nav class="nav">
     <ul class="nav__links">
@@ -41,7 +42,7 @@
   </nav>
 
   <main>
-  <div class="page-hero page-hero--burgundy">
+  <div class="page-hero page-hero--burgundy hero-reveal">
     <span class="page-hero__label">Pop-Ups &amp; Conversatorios</span>
     <h1 class="page-hero__title"><em>Where fashion<br>meets</em> <strong>IRL</strong></h1>
     <p class="page-hero__subtitle">MILA traslada las ideas del contenido al mundo real a trav&eacute;s de pop-ups y encuentros f&iacute;sicos, creando espacios donde marcas, creativos y comunidad se encuentran.</p>
@@ -49,7 +50,7 @@
 
   <div class="events-section">
     <!-- Featured Event -->
-    <article class="event-featured">
+    <article class="event-featured reveal">
       <div class="event-featured__poster">
         <div class="event-featured__poster-clover">
           <div></div><div></div><div></div><div></div>
@@ -77,7 +78,7 @@
     </article>
 
     <!-- Conversatorios -->
-    <section class="conversatorios">
+    <section class="conversatorios reveal">
       <h3 class="events-list__title">Conversatorios &mdash; Panama</h3>
       <div class="conversatorios__grid">
         <div class="conversatorio-card">
@@ -99,7 +100,7 @@
     </section>
 
     <!-- Past / Upcoming Events -->
-    <section class="events-list">
+    <section class="events-list reveal">
       <h3 class="events-list__title">Pr&oacute;ximos eventos</h3>
 
       <div class="event-row">
@@ -219,5 +220,6 @@
     </div>
   </footer>
 
+  <script src="motion.js"></script>
 </body>
 </html>

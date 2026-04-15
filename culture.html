@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="page-transition"></div>
 
   <nav class="nav">
     <ul class="nav__links">
@@ -41,7 +42,7 @@
   </nav>
 
   <main>
-  <div class="page-hero">
+  <div class="page-hero hero-reveal">
     <span class="page-hero__label">Cultura &amp; Contexto</span>
     <h1 class="page-hero__title">La moda como<br><em>lenguaje cultural</em></h1>
     <p class="page-hero__subtitle">Historias, entrevistas y an&aacute;lisis que conectan la moda latinoamericana con su contexto: identidad, territorio, tradici&oacute;n y comunidad.</p>
@@ -49,7 +50,7 @@
 
   <div class="article-grid">
     <!-- Featured Article -->
-    <article class="article-grid__featured">
+    <article class="article-grid__featured reveal">
       <div class="article-grid__featured-img" style="background: linear-gradient(180deg, #c4a035 0%, #8a7020 100%);"></div>
       <div class="article-grid__featured-content">
         <span class="article-grid__featured-cat">Cultura &amp; Contexto</span>
@@ -60,43 +61,43 @@
     </article>
 
     <!-- Article Grid -->
-    <div class="article-grid__items">
-      <article class="article-card">
+    <div class="article-grid__items reveal-stagger">
+      <article class="article-card reveal">
         <div class="article-card__img" style="background: linear-gradient(135deg, var(--burgundy), #2a0a0a);"></div>
         <span class="article-card__cat">Entrevista</span>
         <h3 class="article-card__title">Mercedes Salazar: entre lo ancestral y lo aspiracional</h3>
         <p class="article-card__excerpt">C&oacute;mo convertir tradici&oacute;n en propuesta contempor&aacute;nea con relevancia global.</p>
       </article>
 
-      <article class="article-card">
+      <article class="article-card reveal">
         <div class="article-card__img" style="background: linear-gradient(135deg, var(--green), #1a3a2a);"></div>
         <span class="article-card__cat">Ensayo</span>
         <h3 class="article-card__title">Origen como punto de partida</h3>
         <p class="article-card__excerpt">Construir desde la identidad, no desde la copia. Entender de d&oacute;nde vienes para crear algo que realmente aporte algo nuevo.</p>
       </article>
 
-      <article class="article-card">
+      <article class="article-card reveal">
         <div class="article-card__img" style="background: linear-gradient(135deg, var(--blue), #2a4a6a);"></div>
         <span class="article-card__cat">An&aacute;lisis</span>
         <h3 class="article-card__title">El lujo con identidad local en la escena global</h3>
         <p class="article-card__excerpt">Un statement poderoso que confirma que el dise&ntilde;o latinoamericano tiene un lugar natural en el mercado internacional.</p>
       </article>
 
-      <article class="article-card">
+      <article class="article-card reveal">
         <div class="article-card__img" style="background: linear-gradient(180deg, var(--pink), #c45a80);"></div>
         <span class="article-card__cat">Entrevista</span>
         <h3 class="article-card__title">Bahama Mama: origen como punto de partida</h3>
         <p class="article-card__excerpt">Construir desde la identidad, no desde la copia.</p>
       </article>
 
-      <article class="article-card">
+      <article class="article-card reveal">
         <div class="article-card__img" style="background: linear-gradient(135deg, var(--lavender), #6a5090);"></div>
         <span class="article-card__cat">Cultura</span>
         <h3 class="article-card__title">Craft meets culture: tradici&oacute;n y modernidad</h3>
         <p class="article-card__excerpt">Entre lo ancestral y lo aspiracional &mdash; la conversi&oacute;n de t&eacute;cnicas artesanales en propuesta global.</p>
       </article>
 
-      <article class="article-card">
+      <article class="article-card reveal">
         <div class="article-card__img" style="background: linear-gradient(180deg, #3a3a3a, #1a1a1a);"></div>
         <span class="article-card__cat">Ensayo</span>
         <h3 class="article-card__title">La moda como archivo vivo</h3>
@@ -139,5 +140,6 @@
     </div>
   </footer>
 
+  <script src="motion.js"></script>
 </body>
 </html>

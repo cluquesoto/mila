@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="page-transition"></div>
 
   <nav class="nav nav--dark">
     <ul class="nav__links">
@@ -41,19 +42,19 @@
   </nav>
 
   <main>
-  <div class="page-hero page-hero--dark">
+  <div class="page-hero page-hero--dark hero-reveal">
     <span class="page-hero__label">MILA Studio</span>
     <h1 class="page-hero__title"><strong>Studio</strong><br><em>creative collaborations</em></h1>
     <p class="page-hero__subtitle">MILA Studio es donde orquestamos colaboraciones entre marcas latinoamericanas. Cruces creativos que generan conversaciones, colecciones y nuevos mercados.</p>
   </div>
 
-  <div class="studio-intro">
+  <div class="studio-intro reveal">
     <p>Cada colaboraci&oacute;n nace de una conexi&oacute;n real entre marcas: afinidad creativa, mercados complementarios o una historia compartida. MILA act&uacute;a como curadora y facilitadora &mdash; conectando el talento, definiendo la direcci&oacute;n creativa y acompa&ntilde;ando el proceso hasta el lanzamiento.</p>
   </div>
 
   <div class="collab-grid">
     <!-- Collab 1 -->
-    <article class="collab-card">
+    <article class="collab-card reveal">
       <div class="collab-card__img collab-card__img--yellow">
         <div class="collab-card__img-inner">Sunset the Journey<br>&times;<br>Mar&iacute;a Riba</div>
       </div>
@@ -67,7 +68,7 @@
     </article>
 
     <!-- Collab 2 -->
-    <article class="collab-card">
+    <article class="collab-card reveal">
       <div class="collab-card__img collab-card__img--burgundy">
         <div class="collab-card__img-inner">ZUT<br>&times;<br>KITH</div>
       </div>
@@ -81,7 +82,7 @@
     </article>
 
     <!-- Collab 3 -->
-    <article class="collab-card">
+    <article class="collab-card reveal">
       <div class="collab-card__img collab-card__img--pink">
         <div class="collab-card__img-inner">Mercedes Salazar<br>&times;<br>Bahama Mama</div>
       </div>
@@ -95,7 +96,7 @@
     </article>
 
     <!-- Collab 4 -->
-    <article class="collab-card">
+    <article class="collab-card reveal">
       <div class="collab-card__img collab-card__img--green">
         <div class="collab-card__img-inner">Sixxta<br>&times;<br>Flabelus</div>
       </div>
@@ -165,5 +166,6 @@
     </div>
   </footer>
 
+  <script src="motion.js"></script>
 </body>
 </html>

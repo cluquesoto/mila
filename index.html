@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="page-transition"></div>
 
   <nav class="nav">
     <ul class="nav__links">
@@ -53,20 +54,20 @@
   </section>
 
   <div class="divider-line"></div>
-  <h2 class="section-title">Archivo</h2>
+  <h2 class="section-title reveal">Archivo</h2>
 
-  <section class="archivo">
-    <article class="archivo__card">
+  <section class="archivo reveal-stagger">
+    <article class="archivo__card reveal">
       <div class="archivo__card-img archivo__card-img--editorial"></div>
       <span class="archivo__card-category">Inspiraci&oacute;n</span>
       <span class="archivo__card-title">Heat Deforms &mdash; historia editorial</span>
     </article>
-    <article class="archivo__card">
+    <article class="archivo__card reveal">
       <div class="archivo__card-img archivo__card-img--zut"></div>
       <span class="archivo__card-category">Cultura &amp; Contexto</span>
       <span class="archivo__card-title">ZUT: Desde la Guajira hasta Nueva York</span>
     </article>
-    <article class="archivo__card">
+    <article class="archivo__card reveal">
       <div class="archivo__card-img archivo__card-img--sunset"></div>
       <span class="archivo__card-category">Archivo</span>
       <span class="archivo__card-title">Sunset the Journey + Mar&iacute;a Riba: Table For two</span>
@@ -74,9 +75,9 @@
   </section>
 
   <div class="divider-line"></div>
-  <h2 class="section-title">Calendario</h2>
+  <h2 class="section-title reveal">Calendario</h2>
 
-  <section class="calendario-section">
+  <section class="calendario-section reveal">
     <div class="calendario">
       <div class="calendario__poster">
         <div>
@@ -185,5 +186,6 @@
     document.fonts.ready.then(fitTagline);
     window.addEventListener('resize', fitTagline);
   </script>
+  <script src="motion.js"></script>
 </body>
 </html>

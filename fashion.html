@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="page-transition"></div>
 
   <nav class="nav">
     <ul class="nav__links">
@@ -41,14 +42,14 @@
   </nav>
 
   <main>
-  <div class="page-hero">
+  <div class="page-hero hero-reveal">
     <span class="page-hero__label">Inspiraci&oacute;n &amp; Archivo</span>
     <h1 class="page-hero__title"><strong>Fashion</strong><br><em>made in Latin America</em></h1>
     <p class="page-hero__subtitle">Editoriales, lookbooks, perfiles de marca y drops. La moda latinoamericana vista desde adentro: las piezas, los procesos y las historias detr&aacute;s.</p>
   </div>
 
   <div class="article-grid">
-    <article class="article-grid__featured">
+    <article class="article-grid__featured reveal">
       <div class="article-grid__featured-img" style="background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 50%, #f5f0e8 50%, #f5f0e8 100%);"></div>
       <div class="article-grid__featured-content">
         <span class="article-grid__featured-cat">Editorial</span>
@@ -58,43 +59,43 @@
       </div>
     </article>
 
-    <div class="article-grid__items">
-      <article class="article-card">
+    <div class="article-grid__items reveal-stagger">
+      <article class="article-card reveal">
         <div class="article-card__img" style="background: linear-gradient(135deg, #e8a090 0%, #d45040 50%, #f5e0d0 100%);"></div>
         <span class="article-card__cat">Drop</span>
         <h3 class="article-card__title">A Drop Inspired by Everyday Rituals</h3>
         <p class="article-card__excerpt">La inspiraci&oacute;n no siempre vive dentro de la moda. A veces est&aacute; en las personas, en los oficios, en las ideas que nacen en lo cotidiano.</p>
       </article>
 
-      <article class="article-card">
+      <article class="article-card reveal">
         <div class="article-card__img" style="background: linear-gradient(180deg, var(--yellow), #e8e080);"></div>
         <span class="article-card__cat">Perfil de Marca</span>
         <h3 class="article-card__title">Sixxta: De Bucaramanga a Panam&aacute;, Medell&iacute;n &amp; Barcelona</h3>
         <p class="article-card__excerpt">Una marca que cruza fronteras sin perder su ADN colombiano.</p>
       </article>
 
-      <article class="article-card">
+      <article class="article-card reveal">
         <div class="article-card__img" style="background: linear-gradient(135deg, var(--green), #1a4a33);"></div>
         <span class="article-card__cat">Lookbook</span>
         <h3 class="article-card__title">Craft, Heritage &amp; Global Presence</h3>
         <p class="article-card__excerpt">El craftsmanship y el tiempo trabajando juntos. Dise&ntilde;o que conecta tradici&oacute;n y modernidad.</p>
       </article>
 
-      <article class="article-card">
+      <article class="article-card reveal">
         <div class="article-card__img" style="background: linear-gradient(180deg, var(--pink), #d06a90);"></div>
         <span class="article-card__cat">Editorial</span>
         <h3 class="article-card__title">Inside the Making</h3>
         <p class="article-card__excerpt">Un foro de la industria: los procesos creativos detr&aacute;s de las marcas emergentes de Latinoam&eacute;rica.</p>
       </article>
 
-      <article class="article-card">
+      <article class="article-card reveal">
         <div class="article-card__img" style="background: linear-gradient(135deg, var(--burgundy), #1a0808);"></div>
         <span class="article-card__cat">Archivo</span>
         <h3 class="article-card__title">Sunset the Journey + Mar&iacute;a Riba: Table For Two</h3>
         <p class="article-card__excerpt">Un cruce creativo fuera del esquema tradicional de la moda que abri&oacute; una conversaci&oacute;n genuina.</p>
       </article>
 
-      <article class="article-card">
+      <article class="article-card reveal">
         <div class="article-card__img" style="background: linear-gradient(180deg, var(--blue), #3a6090);"></div>
         <span class="article-card__cat">Drop</span>
         <h3 class="article-card__title">Flabelus: Test, Scale, Expand</h3>
@@ -137,5 +138,6 @@
     </div>
   </footer>
 
+  <script src="motion.js"></script>
 </body>
 </html>
