@@ -16,37 +16,27 @@
     revealEls.forEach(function (el) { observer.observe(el); });
   }
 
-  // --- Page transitions ---
-  var overlay = document.querySelector('.page-transition');
-  if (!overlay) return;
-
-  // On page load: play the "leaving" (wipe-out) animation to reveal content
-  window.addEventListener('load', function () {
-    overlay.classList.add('is-leaving');
-    overlay.addEventListener('animationend', function handler() {
-      overlay.classList.remove('is-leaving');
-      overlay.removeEventListener('animationend', handler);
+  // --- Page transitions (simple fade) ---
+  // Fade in on arrival
+  document.body.classList.add('is-navigating');
+  requestAnimationFrame(function () {
+    requestAnimationFrame(function () {
+      document.body.classList.remove('is-navigating');
     });
   });
 
-  // Intercept internal link clicks for transition
+  // Fade out on internal link click
   document.addEventListener('click', function (e) {
     var link = e.target.closest('a[href]');
     if (!link) return;
 
     var href = link.getAttribute('href');
-    // Skip anchors, external links, and # links
     if (!href || href === '#' || href.startsWith('http') || href.startsWith('mailto:')) return;
-    // Skip if modifier key held (open in new tab)
     if (e.metaKey || e.ctrlKey || e.shiftKey) return;
 
     e.preventDefault();
-    overlay.classList.add('is-entering');
-    overlay.addEventListener('animationend', function handler() {
-      overlay.classList.remove('is-entering');
-      overlay.removeEventListener('animationend', handler);
-      window.location.href = href;
-    });
+    document.body.classList.add('is-navigating');
+    setTimeout(function () { window.location.href = href; }, 300);
   });
 
   // --- Parallax on homepage hero clover ---

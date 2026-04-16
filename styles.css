@@ -1193,33 +1193,13 @@ html { scroll-behavior: smooth; }
   transform: translateX(4px);
 }
 
-/* Page transition overlay */
-.page-transition {
-  position: fixed;
-  inset: 0;
-  z-index: 9999;
-  background: var(--burgundy);
-  transform: scaleY(0);
-  transform-origin: bottom;
-  pointer-events: none;
+/* Page transition — simple fade */
+body {
+  transition: opacity 0.3s ease;
 }
 
-.page-transition.is-entering {
-  animation: wipe-in 0.45s cubic-bezier(0.77, 0, 0.175, 1) forwards;
-}
-
-.page-transition.is-leaving {
-  animation: wipe-out 0.4s cubic-bezier(0.77, 0, 0.175, 1) forwards;
-}
-
-@keyframes wipe-in {
-  0%   { transform: scaleY(0); transform-origin: bottom; }
-  100% { transform: scaleY(1); transform-origin: bottom; }
-}
-
-@keyframes wipe-out {
-  0%   { transform: scaleY(1); transform-origin: top; }
-  100% { transform: scaleY(0); transform-origin: top; }
+body.is-navigating {
+  opacity: 0;
 }
 
 /* Respect reduced-motion preferences */
