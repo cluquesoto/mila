@@ -4,16 +4,16 @@
 
 El sitio web de MILA vive en **madeinlatinamerica.com**. Es un conjunto de archivos que viven en internet (en GitHub). Cada pagina del sitio es un archivo. Cuando alguien cambia un archivo y lo "sube", el sitio se actualiza automaticamente en segundos.
 
-**Claude Code** es una aplicacion de escritorio (como Word o Photoshop) que tiene una inteligencia artificial adentro. Vos abris la app, le hablas en espanol, le pedis cambios al sitio, y ella los hace por vos. **No necesitas saber programar.**
+**Claude Code** es una aplicacion de escritorio (como Word o Photoshop) que tiene una inteligencia artificial adentro. Tu abres la app, le hablas en espanol, le pides cambios al sitio, y ella los hace por ti. **No necesitas saber programar.**
 
 ### Como funciona el flujo de publicacion
 
 El sitio tiene dos versiones:
 
-1. **Staging (borrador)** — una version privada donde podes ver los cambios antes de que salgan en vivo. Solo la ve el equipo.
+1. **Staging (borrador)** — una version privada donde puedes ver los cambios antes de que salgan en vivo. Solo la ve el equipo.
 2. **Produccion (en vivo)** — la version publica en madeinlatinamerica.com que ven todos los visitantes.
 
-El flujo es: haces cambios → los subis a staging → los revisas → cuando estan bien, los publicas a produccion. Asi nunca sale nada en vivo sin que alguien lo haya revisado primero.
+El flujo es: haces cambios → los subes a staging → los revisas → cuando estan bien, los publicas a produccion. Asi nunca sale nada en vivo sin que alguien lo haya revisado primero.
 
 ---
 
@@ -23,25 +23,25 @@ El flujo es: haces cambios → los subis a staging → los revisas → cuando es
 
 GitHub es donde viven los archivos del sitio. Necesitas una cuenta para poder hacer cambios.
 
-1. Anda a https://github.com y crea una cuenta gratuita
+1. Ve a https://github.com y crea una cuenta gratuita
 2. **Importante:** Pasale tu nombre de usuario de GitHub a Nico para que te de acceso al proyecto
 
 ### 1.2 — Instalar la app de Claude Code
 
-1. Anda a https://claude.ai/code
+1. Ve a https://claude.ai/code
 2. Descarga la aplicacion de escritorio para Mac
 3. Instalala como cualquier otra app (arrastra al folder de Aplicaciones)
-4. Abrila. Te va a pedir iniciar sesion — usa la cuenta que te indique Nico
+4. Abrela. Te va a pedir iniciar sesion — usa la cuenta que te indique Nico
 
 ### 1.3 — Conectar el proyecto de MILA
 
-Cuando abras Claude Code por primera vez, vas a ver una pantalla de chat. Lo primero que tenes que hacer es conectar el proyecto:
+Cuando abras Claude Code por primera vez, vas a ver una pantalla de chat. Lo primero que tienes que hacer es conectar el proyecto:
 
 1. En la app, busca la opcion de abrir un proyecto o carpeta
 2. Claude te va a guiar para descargar (clonar) el proyecto de MILA desde GitHub
 3. Si te pide alguna autorizacion de GitHub, aceptala
 
-**Si te trabas en este paso**, simplemente escribile a Claude en el chat:
+**Si te trabas en este paso**, simplemente escribele a Claude en el chat:
 
 > "Necesito configurar el proyecto de MILA. El repositorio esta en https://github.com/zalucinc/mila. Ayudame a descargarlo y abrirlo"
 
@@ -51,9 +51,9 @@ Claude te va a guiar paso a paso.
 
 ## Paso 2: Como hablarle a Claude
 
-Una vez que el proyecto esta abierto, simplemente escribi lo que queres hacer **en espanol, como si le hablaras a un companero de trabajo**. Claude ya conoce toda la estructura del sitio de MILA, los colores, las paginas, todo.
+Una vez que el proyecto esta abierto, simplemente escribe lo que quieres hacer **en espanol, como si le hablaras a un companero de trabajo**. Claude ya conoce toda la estructura del sitio de MILA, los colores, las paginas, todo.
 
-### Ejemplos de cosas que podes pedir:
+### Ejemplos de cosas que puedes pedir:
 
 ---
 
@@ -97,7 +97,7 @@ Una vez que el proyecto esta abierto, simplemente escribi lo que queres hacer **
 
 **Cambiar el orden de las secciones:**
 
-> "Movi la seccion de Calendario arriba de la seccion de Archivo en la pagina principal"
+> "Mueve la seccion de Calendario arriba de la seccion de Archivo en la pagina principal"
 
 ---
 
@@ -105,7 +105,7 @@ Una vez que el proyecto esta abierto, simplemente escribi lo que queres hacer **
 
 > "Agrega este video de YouTube en la pagina de RSVP: https://youtube.com/watch?v=XXXXX"
 
-(Subi tus videos a YouTube o Vimeo primero, y despues compartile el link a Claude)
+(Sube tus videos a YouTube o Vimeo primero, y despues compartele el link a Claude)
 
 ---
 
@@ -114,7 +114,7 @@ Una vez que el proyecto esta abierto, simplemente escribi lo que queres hacer **
 Para agregar una foto nueva al sitio:
 
 1. **Arrastra la foto** directamente a la ventana de Claude Code, o usa el boton de adjuntar archivo (el clip o icono de imagen) en el chat
-2. Decile a Claude que hacer con ella:
+2. Dile a Claude que hacer con ella:
 
 > "Usa esta foto como la imagen principal del editorial sobre Panama en la pagina de Culture"
 
@@ -124,17 +124,17 @@ Para agregar una foto nueva al sitio:
 
 ### Reglas importantes para fotos
 
-Las fotos son lo que mas afecta la velocidad del sitio. Si las fotos son muy pesadas, el sitio carga lento — especialmente en celulares. Segui estas reglas:
+Las fotos son lo que mas afecta la velocidad del sitio. Si las fotos son muy pesadas, el sitio carga lento — especialmente en celulares. Sigue estas reglas:
 
 **Tamano de archivo:**
 - Cada foto deberia pesar **menos de 500KB** (medio megabyte)
-- Si tu foto pesa mas de 1MB, decile a Claude: "Optimiza esta imagen para web antes de agregarla"
+- Si tu foto pesa mas de 1MB, dile a Claude: "Optimiza esta imagen para web antes de agregarla"
 - Las fotos que saca un iPhone pueden pesar 5-10MB — siempre hay que optimizarlas
 
 **Formato:**
 - Fotos: usa **JPG** (para fotos normales) o **WebP** (mas moderno y liviano)
 - Logos e iconos: usa **PNG** (fondo transparente) o **SVG**
-- **No uses** fotos en formato HEIC (el formato nativo del iPhone) — decile a Claude que las convierta a JPG
+- **No uses** fotos en formato HEIC (el formato nativo del iPhone) — dile a Claude que las convierta a JPG
 
 **Dimensiones:**
 - Para fotos de ancho completo (hero, banners): **maximo 1920 pixeles de ancho**
@@ -145,19 +145,19 @@ Las fotos son lo que mas afecta la velocidad del sitio. Si las fotos son muy pes
 - Usa nombres descriptivos en minuscula, sin espacios ni acentos
 - Bien: `popup-panama-2026.jpg`, `marca-tropicalia-logo.png`
 - Mal: `IMG_4532.HEIC`, `Foto Final (2).jpg`, `captura de pantalla.png`
-- Si tu foto tiene un nombre raro, decile a Claude: "Renombra esta imagen a popup-panama-2026.jpg"
+- Si tu foto tiene un nombre raro, dile a Claude: "Renombra esta imagen a popup-panama-2026.jpg"
 
 **Para PDFs y documentos:**
-- Igual que con las fotos — arrastralos al chat y decile a Claude donde los queres agregar
+- Igual que con las fotos — arrastralos al chat y dile a Claude donde los quieres agregar
 - Ejemplo: "Agrega este PDF como descargable en la pagina de Fashion con el texto 'Descargar Lookbook 2026'"
 
 ---
 
 ## Paso 4: Como subir cambios a staging (borrador)
 
-Cuando Claude termina de hacer los cambios, primero los subis a **staging** para revisarlos antes de que salgan en vivo.
+Cuando Claude termina de hacer los cambios, primero los subes a **staging** para revisarlos antes de que salgan en vivo.
 
-Escribile a Claude:
+Escribele a Claude:
 
 > "Sube los cambios a staging"
 
@@ -165,9 +165,9 @@ Claude va a hacer todo automaticamente. Te va a pedir que apruebes algunos pasos
 
 **Despues de subir a staging:**
 1. Claude te va a dar un link de preview (una URL temporal)
-2. Abri ese link en tu navegador
-3. Revisa que todo se vea bien — en computadora y en celular
-4. Si algo no esta bien, decile a Claude que lo corrija y volve a subir a staging
+2. Abre ese link en tu navegador
+3. Revisa que todo se vea bien — en computador y en celular
+4. Si algo no esta bien, dile a Claude que lo corrija y vuelve a subir a staging
 
 ---
 
@@ -175,7 +175,7 @@ Claude va a hacer todo automaticamente. Te va a pedir que apruebes algunos pasos
 
 Cuando ya revisaste los cambios en staging y todo se ve bien:
 
-Escribile a Claude:
+Escribele a Claude:
 
 > "Publica los cambios a produccion"
 
@@ -183,7 +183,7 @@ Esto hace que los cambios aparezcan en **madeinlatinamerica.com** para todos los
 
 **Despues de publicar:**
 1. Espera unos 30 segundos
-2. Abri **madeinlatinamerica.com** en tu navegador
+2. Abre **madeinlatinamerica.com** en tu navegador
 3. Recarga la pagina (Cmd + R en Mac)
 4. Deberias ver tus cambios en vivo
 
@@ -195,15 +195,15 @@ Si el dominio principal todavia no esta configurado, usa la URL de prueba: https
 
 Cada vez que abras Claude Code para hacer cambios:
 
-1. Abri la app de Claude Code
+1. Abre la app de Claude Code
 2. Asegurate de que el proyecto MILA este abierto (deberias ver el nombre "mila" en alguna parte de la ventana)
-3. **Siempre empeza pidiendole esto a Claude:**
+3. **Siempre empieza pidiendole esto a Claude:**
 
 > "Trae los cambios mas recientes del sitio antes de empezar"
 
 Esto es importante para que tengas la version mas actualizada y no haya conflictos si alguien mas del equipo hizo cambios.
 
-4. Ahora si — pedile lo que necesites
+4. Ahora si — pidele lo que necesites
 
 ---
 
@@ -221,28 +221,28 @@ Si dos personas editan el mismo archivo al mismo tiempo, se genera un "conflicto
 
 ### Regla #2: Siempre traer lo ultimo antes de empezar
 
-Antes de hacer cualquier cambio, **siempre** decile a Claude:
+Antes de hacer cualquier cambio, **siempre** dile a Claude:
 
 > "Trae los cambios mas recientes del sitio"
 
-Si te olvidas de esto y alguien mas hizo cambios, puede haber problemas.
+Si se te olvida esto y alguien mas hizo cambios, puede haber problemas.
 
 ### Regla #3: Staging primero, produccion despues
 
 **Nunca publiques directamente a produccion.** El flujo correcto es:
 
 1. Haz un cambio
-2. Subi a staging ("Sube los cambios a staging")
+2. Sube a staging ("Sube los cambios a staging")
 3. Revisa el link de preview
 4. Si esta bien → "Publica a produccion"
-5. Si no esta bien → pedile a Claude que corrija → volve al paso 2
+5. Si no esta bien → pidele a Claude que corrija → vuelve al paso 2
 
 ### Regla #4: Revisar en celular
 
-Despues de subir a staging, revisa el link de preview en tu celular tambien. Muchos visitantes van a ver el sitio desde el telefono, y a veces algo que se ve bien en computadora se ve raro en celular.
+Despues de subir a staging, revisa el link de preview en tu celular tambien. Muchos visitantes van a ver el sitio desde el telefono, y a veces algo que se ve bien en computador se ve raro en celular.
 
-Si algo se ve mal en celular, decile a Claude:
-> "El cambio que hicimos se ve mal en celular. Necesito que se vea bien tanto en computadora como en telefono"
+Si algo se ve mal en celular, dile a Claude:
+> "El cambio que hicimos se ve mal en celular. Necesito que se vea bien tanto en computador como en telefono"
 
 ---
 
@@ -250,24 +250,24 @@ Si algo se ve mal en celular, decile a Claude:
 
 ### Textos y articulos
 
-- **Escribi el contenido primero** en Google Docs, Notes, o donde te sea comodo. Cuando este listo, copialo y pegalo en el chat con Claude
-- **Revisa la ortografia antes** de pegarlo — Claude no corrige ortografia del contenido que vos le das
+- **Escribe el contenido primero** en Google Docs, Notes, o donde te sea comodo. Cuando este listo, copialo y pegalo en el chat con Claude
+- **Revisa la ortografia antes** de pegarlo — Claude no corrige ortografia del contenido que tu le das
 - Si el texto es muy largo (mas de 3 parrafos), mandalo por partes para que Claude no se confunda
 
 ### Fotos editoriales
 
-- Tene todas las fotos de un editorial **listas antes** de empezar. Es mas facil agregar 5 fotos de una vez que ir de a una
-- Mantene copias de las fotos originales en Google Drive o similar — el sitio guarda versiones optimizadas, no las originales
+- Ten todas las fotos de un editorial **listas antes** de empezar. Es mas facil agregar 5 fotos de una vez que ir de a una
+- Manten copias de las fotos originales en Google Drive o similar — el sitio guarda versiones optimizadas, no las originales
 
 ### Eventos
 
-- Cuando un evento ya paso, decile a Claude: "El evento Pop-Up Panama ya paso. Movelo a una seccion de eventos pasados o eliminalo del calendario"
-- Mantene el calendario actualizado — un sitio con eventos vencidos da mala impresion
+- Cuando un evento ya paso, dile a Claude: "El evento Pop-Up Panama ya paso. Muevelo a una seccion de eventos pasados o eliminalo del calendario"
+- Manten el calendario actualizado — un sitio con eventos vencidos da mala impresion
 
 ### Marcas y colaboraciones
 
 - Cuando agregues una marca nueva, trata de incluir: nombre, pais, categoria, y si es posible una imagen o logo
-- Si una marca ya no participa, decile a Claude que la quite del directorio
+- Si una marca ya no participa, dile a Claude que la quite del directorio
 
 ---
 
@@ -285,7 +285,7 @@ Si algo se ve mal en celular, decile a Claude:
 
 ## Colores de la marca
 
-Cuando quieras referirte a un color especifico, podes usar estos nombres y Claude los entiende:
+Cuando quieras referirte a un color especifico, puedes usar estos nombres y Claude los entiende:
 
 | Nombre | Color | Donde se usa |
 |--------|-------|-------------|
@@ -301,30 +301,30 @@ Cuando quieras referirte a un color especifico, podes usar estos nombres y Claud
 
 Ejemplo: "Cambia el fondo de la seccion de eventos al color lavender"
 
-Tambien podes usar cualquier color que quieras aunque no este en esta lista:
+Tambien puedes usar cualquier color que quieras aunque no este en esta lista:
 > "Quiero que el fondo sea de un coral suave" — Claude va a buscar el tono correcto.
 
 ---
 
 ## Tips y buenas practicas
 
-1. **Se especifico.** En vez de "cambia algo en la pagina", di exactamente que queres cambiar y en que pagina. Mientras mas claro seas, mejor resultado.
+1. **Se especifico.** En vez de "cambia algo en la pagina", di exactamente que quieres cambiar y en que pagina. Entre mas claro seas, mejor resultado.
 
 2. **Siempre staging primero.** Nunca publiques directo a produccion. Revisa en staging y despues publica.
 
-3. **Podes deshacer cualquier cosa.** Si algo quedo mal, decile a Claude:
+3. **Puedes deshacer cualquier cosa.** Si algo quedo mal, dile a Claude:
    > "Deshaz el ultimo cambio" o "Quiero que vuelva a como estaba antes"
 
-4. **Podes preguntar antes de actuar.** Si no estas seguro de como va a quedar algo:
+4. **Puedes preguntar antes de actuar.** Si no estas seguro de como va a quedar algo:
    > "Como se veria si cambio el fondo del hero a verde? No lo cambies todavia, solo explicame"
 
-5. **Para textos largos** (articulos, descripciones de eventos), escribilos primero en cualquier lado (Google Docs, Notes, WhatsApp) y despues pega el texto completo en el chat con Claude.
+5. **Para textos largos** (articulos, descripciones de eventos), escribelos primero en cualquier lado (Google Docs, Notes, WhatsApp) y despues pega el texto completo en el chat con Claude.
 
 6. **Claude pide permisos.** A veces Claude te va a pedir permiso para ejecutar ciertos pasos. Si dice algo como "Allow" o "Run command", dale que si. Esos son los pasos necesarios para guardar y publicar tus cambios.
 
-7. **Revisa en computadora Y celular.** Despues de cambios visuales, siempre chequea el link de staging en ambos antes de publicar a produccion.
+7. **Revisa en computador Y celular.** Despues de cambios visuales, siempre revisa el link de staging en ambos antes de publicar a produccion.
 
-8. **No borres cosas por las dudas.** Si no estas seguro de si algo se esta usando, preguntale a Claude antes de eliminarlo: "Se esta usando esta seccion? Es seguro borrarla?"
+8. **No borres cosas por si acaso.** Si no estas seguro de si algo se esta usando, preguntale a Claude antes de eliminarlo: "Se esta usando esta seccion? Es seguro borrarla?"
 
 ---
 
@@ -335,7 +335,7 @@ El sitio de MILA esta alojado en **Vercel**, una plataforma que se encarga de pu
 ### Direcciones del sitio
 
 - **Dominio principal (produccion):** madeinlatinamerica.com — esta es la direccion publica que comparten con el mundo
-- **Staging (borrador):** Vercel genera un link de preview cada vez que subis cambios a staging. Claude te lo comparte.
+- **Staging (borrador):** Vercel genera un link de preview cada vez que subes cambios a staging. Claude te lo comparte.
 - **URL de respaldo:** mila-xi-six.vercel.app — siempre muestra la version de produccion. Util si el dominio principal tiene algun problema.
 
 ### Conexion del dominio (Nico se encarga de esto)
@@ -344,35 +344,35 @@ Para que madeinlatinamerica.com funcione, se necesita configurar el DNS (es como
 
 **Esto lo configura Nico.** Si el dominio no esta cargando o hay algun problema con la direccion, avisale. El equipo no necesita tocar esta configuracion.
 
-Lo que si pueden hacer: si notan que madeinlatinamerica.com no carga pero mila-xi-six.vercel.app si, eso significa que hay un problema de DNS — manden mensaje a Nico.
+Lo que si pueden hacer: si notan que madeinlatinamerica.com no carga pero mila-xi-six.vercel.app si, eso significa que hay un problema de DNS — mandenle mensaje a Nico.
 
 ---
 
 ## Si algo sale mal
 
 **"No se como abrir el proyecto":**
-> Escribile a Claude: "Ayudame a abrir el proyecto de MILA que esta en GitHub en https://github.com/zalucinc/mila"
+> Escribele a Claude: "Ayudame a abrir el proyecto de MILA que esta en GitHub en https://github.com/zalucinc/mila"
 
 **"Hice un cambio y quedo mal":**
-> Escribile a Claude: "Deshaz todos los cambios que hicimos hoy y vuelve a como estaba antes"
+> Escribele a Claude: "Deshaz todos los cambios que hicimos hoy y vuelve a como estaba antes"
 
 **"El sitio no se actualizo despues de publicar":**
-> Espera 30 segundos y recarga la pagina en tu navegador (Cmd + R). Si despues de un minuto sigue igual, decile a Claude: "Verifica que los cambios se hayan subido correctamente"
+> Espera 30 segundos y recarga la pagina en tu navegador (Cmd + R). Si despues de un minuto sigue igual, dile a Claude: "Verifica que los cambios se hayan subido correctamente"
 
 **"El sitio no carga en madeinlatinamerica.com pero si en la otra URL":**
 > Es un problema de dominio/DNS. Avisale a Nico. Mientras tanto, usa mila-xi-six.vercel.app para verificar tus cambios.
 
 **"Me dice que hay un conflicto":**
-> Decile a Claude: "Hay un conflicto con los archivos. Ayudame a resolverlo sin perder mis cambios"
+> Dile a Claude: "Hay un conflicto con los archivos. Ayudame a resolverlo sin perder mis cambios"
 
 **"No entiendo lo que me esta diciendo Claude":**
-> Decile: "Explicame en espanol simple que esta pasando y que tengo que hacer"
+> Dile: "Explicame en espanol simple que esta pasando y que tengo que hacer"
 
 **"El sitio se ve raro en celular":**
-> Decile a Claude: "El sitio se ve mal en celular. Revisa el responsive y arreglalo"
+> Dile a Claude: "El sitio se ve mal en celular. Revisa el responsive y arreglalo"
 
 **Cualquier otro problema:**
-> Escribile a Nico. O simplemente describile el problema a Claude — casi siempre puede resolverlo solo.
+> Escribele a Nico. O simplemente describele el problema a Claude — casi siempre puede resolverlo solo.
 
 ---
 
@@ -415,4 +415,4 @@ Si Claude te hace alguna pregunta tecnica, esta informacion puede ser util. No n
 ---
 
 *Guia creada para el equipo MILA. Ultima actualizacion: junio 2026.*
-*Si tienes dudas, escribile a Nico o simplemente preguntale a Claude — el te ayuda.*
+*Si tienes dudas, escribele a Nico o simplemente preguntale a Claude — el te ayuda.*
