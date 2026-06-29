@@ -6,6 +6,15 @@ El sitio web de MILA vive en **madeinlatinamerica.com**. Es un conjunto de archi
 
 **Claude Code** es una aplicacion de escritorio (como Word o Photoshop) que tiene una inteligencia artificial adentro. Vos abris la app, le hablas en espanol, le pedis cambios al sitio, y ella los hace por vos. **No necesitas saber programar.**
 
+### Como funciona el flujo de publicacion
+
+El sitio tiene dos versiones:
+
+1. **Staging (borrador)** — una version privada donde podes ver los cambios antes de que salgan en vivo. Solo la ve el equipo.
+2. **Produccion (en vivo)** — la version publica en madeinlatinamerica.com que ven todos los visitantes.
+
+El flujo es: haces cambios → los subis a staging → los revisas → cuando estan bien, los publicas a produccion. Asi nunca sale nada en vivo sin que alguien lo haya revisado primero.
+
 ---
 
 ## Paso 1: Preparacion inicial (una sola vez)
@@ -144,15 +153,33 @@ Las fotos son lo que mas afecta la velocidad del sitio. Si las fotos son muy pes
 
 ---
 
-## Paso 4: Como publicar los cambios
+## Paso 4: Como subir cambios a staging (borrador)
 
-Cuando Claude termina de hacer los cambios, necesitas "publicarlos" para que aparezcan en el sitio web real. Es muy simple:
+Cuando Claude termina de hacer los cambios, primero los subis a **staging** para revisarlos antes de que salgan en vivo.
 
 Escribile a Claude:
 
-> "Sube los cambios al sitio"
+> "Sube los cambios a staging"
 
 Claude va a hacer todo automaticamente. Te va a pedir que apruebes algunos pasos — simplemente dale que si (haciendo click en "Allow" o "Aceptar" cuando aparezca).
+
+**Despues de subir a staging:**
+1. Claude te va a dar un link de preview (una URL temporal)
+2. Abri ese link en tu navegador
+3. Revisa que todo se vea bien — en computadora y en celular
+4. Si algo no esta bien, decile a Claude que lo corrija y volve a subir a staging
+
+---
+
+## Paso 5: Como publicar a produccion (en vivo)
+
+Cuando ya revisaste los cambios en staging y todo se ve bien:
+
+Escribile a Claude:
+
+> "Publica los cambios a produccion"
+
+Esto hace que los cambios aparezcan en **madeinlatinamerica.com** para todos los visitantes.
 
 **Despues de publicar:**
 1. Espera unos 30 segundos
@@ -164,7 +191,7 @@ Si el dominio principal todavia no esta configurado, usa la URL de prueba: https
 
 ---
 
-## Paso 5: Como empezar cada sesion de trabajo
+## Paso 6: Como empezar cada sesion de trabajo
 
 Cada vez que abras Claude Code para hacer cambios:
 
@@ -200,20 +227,19 @@ Antes de hacer cualquier cambio, **siempre** decile a Claude:
 
 Si te olvidas de esto y alguien mas hizo cambios, puede haber problemas.
 
-### Regla #3: Publicar seguido, no acumular
+### Regla #3: Staging primero, produccion despues
 
-No hagas 10 cambios sin publicar. El flujo ideal es:
+**Nunca publiques directamente a produccion.** El flujo correcto es:
 
 1. Haz un cambio
-2. Revisa que se vea bien
-3. Publica ("Sube los cambios al sitio")
-4. Siguiente cambio
-
-Asi si algo sale mal, solo perdiste un cambio, no diez.
+2. Subi a staging ("Sube los cambios a staging")
+3. Revisa el link de preview
+4. Si esta bien → "Publica a produccion"
+5. Si no esta bien → pedile a Claude que corrija → volve al paso 2
 
 ### Regla #4: Revisar en celular
 
-Despues de publicar cambios visuales (colores, fotos, layout), abri el sitio en tu celular tambien. Muchos visitantes van a ver el sitio desde el telefono, y a veces algo que se ve bien en computadora se ve raro en celular.
+Despues de subir a staging, revisa el link de preview en tu celular tambien. Muchos visitantes van a ver el sitio desde el telefono, y a veces algo que se ve bien en computadora se ve raro en celular.
 
 Si algo se ve mal en celular, decile a Claude:
 > "El cambio que hicimos se ve mal en celular. Necesito que se vea bien tanto en computadora como en telefono"
@@ -284,7 +310,7 @@ Tambien podes usar cualquier color que quieras aunque no este en esta lista:
 
 1. **Se especifico.** En vez de "cambia algo en la pagina", di exactamente que queres cambiar y en que pagina. Mientras mas claro seas, mejor resultado.
 
-2. **Un cambio a la vez.** Es mejor hacer cambios chicos y publicar seguido, que hacer 20 cambios de una vez. Asi si algo sale mal, es facilisimo volver atras.
+2. **Siempre staging primero.** Nunca publiques directo a produccion. Revisa en staging y despues publica.
 
 3. **Podes deshacer cualquier cosa.** Si algo quedo mal, decile a Claude:
    > "Deshaz el ultimo cambio" o "Quiero que vuelva a como estaba antes"
@@ -296,7 +322,7 @@ Tambien podes usar cualquier color que quieras aunque no este en esta lista:
 
 6. **Claude pide permisos.** A veces Claude te va a pedir permiso para ejecutar ciertos pasos. Si dice algo como "Allow" o "Run command", dale que si. Esos son los pasos necesarios para guardar y publicar tus cambios.
 
-7. **Revisa en computadora Y celular.** Despues de cambios visuales, siempre chequea el sitio en ambos. Si algo se ve raro en uno de los dos, avisale a Claude.
+7. **Revisa en computadora Y celular.** Despues de cambios visuales, siempre chequea el link de staging en ambos antes de publicar a produccion.
 
 8. **No borres cosas por las dudas.** Si no estas seguro de si algo se esta usando, preguntale a Claude antes de eliminarlo: "Se esta usando esta seccion? Es seguro borrarla?"
 
@@ -308,10 +334,9 @@ El sitio de MILA esta alojado en **Vercel**, una plataforma que se encarga de pu
 
 ### Direcciones del sitio
 
-- **Dominio principal:** madeinlatinamerica.com — esta es la direccion publica que comparten con el mundo
-- **URL de prueba:** mila-xi-six.vercel.app — esta siempre funciona y muestra exactamente lo mismo. Es util si el dominio principal tiene algun problema
-
-Ambas direcciones muestran el mismo sitio. Cuando publicas cambios, se actualizan las dos al mismo tiempo.
+- **Dominio principal (produccion):** madeinlatinamerica.com — esta es la direccion publica que comparten con el mundo
+- **Staging (borrador):** Vercel genera un link de preview cada vez que subis cambios a staging. Claude te lo comparte.
+- **URL de respaldo:** mila-xi-six.vercel.app — siempre muestra la version de produccion. Util si el dominio principal tiene algun problema.
 
 ### Conexion del dominio (Nico se encarga de esto)
 
@@ -320,13 +345,6 @@ Para que madeinlatinamerica.com funcione, se necesita configurar el DNS (es como
 **Esto lo configura Nico.** Si el dominio no esta cargando o hay algun problema con la direccion, avisale. El equipo no necesita tocar esta configuracion.
 
 Lo que si pueden hacer: si notan que madeinlatinamerica.com no carga pero mila-xi-six.vercel.app si, eso significa que hay un problema de DNS — manden mensaje a Nico.
-
-### Cuando cambiemos de dominio o agreguemos otro
-
-Si en el futuro MILA necesita otro dominio (por ejemplo, mila.co o similar):
-- Nico se encarga de la configuracion
-- El equipo no necesita cambiar nada de su flujo de trabajo — siguen usando Claude Code igual
-- Los cambios se publican de la misma manera
 
 ---
 
@@ -367,7 +385,8 @@ Si en el futuro MILA necesita otro dominio (por ejemplo, mila.co o similar):
 | Agregar una marca | "Agrega la marca [nombre], categoria [X], de [pais]" |
 | Agregar una foto | (arrastra la foto al chat) "Usa esta foto en [donde]" |
 | Cambiar un color | "Cambia el color de [que cosa] a [que color]" |
-| Publicar los cambios | "Sube los cambios al sitio" |
+| Subir a staging | "Sube los cambios a staging" |
+| Publicar en vivo | "Publica los cambios a produccion" |
 | Deshacer un cambio | "Deshaz el ultimo cambio" |
 | Crear un articulo | "Crea un articulo en la pagina de [X] con titulo [Y] y texto [Z]" |
 | Agregar un video | "Agrega este video de YouTube [URL] en la pagina de [X]" |
@@ -384,8 +403,10 @@ Si Claude te hace alguna pregunta tecnica, esta informacion puede ser util. No n
 
 - Repositorio: https://github.com/zalucinc/mila
 - Dominio: madeinlatinamerica.com
-- URL de preview Vercel: https://mila-xi-six.vercel.app/
-- Deploy automatico con Vercel en push a la rama `main`
+- URL de respaldo Vercel: https://mila-xi-six.vercel.app/
+- Staging: rama `staging` — push aca para preview
+- Produccion: rama `main` — merge desde staging para publicar
+- Deploy automatico con Vercel
 - Sitio estatico (HTML + CSS + JS, sin backend ni base de datos)
 - Archivos principales: index.html, culture.html, fashion.html, rsvp.html, studio.html, styles.css, motion.js
 - Imagenes en la carpeta `assets/`

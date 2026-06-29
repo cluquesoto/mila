@@ -40,20 +40,38 @@ Mila is a cultural fashion platform and living archive of Latin American fashion
 - Clover icon (4 overlapping circles) is the brand symbol, always superscript to "mila"
 
 ## Deployment
-- **Hosting**: Vercel (auto-deploys from GitHub on push to `main`)
-- **Preview URL**: https://mila-xi-six.vercel.app/
-- **Domain**: madeinlatinamerica.com (not yet connected — DNS pending)
+- **Hosting**: Vercel (auto-deploys from GitHub)
+- **Production URL**: madeinlatinamerica.com (auto-deploys from `main` branch)
+- **Staging URL**: Vercel generates a preview URL for the `staging` branch (check Vercel dashboard for the URL)
+- **Fallback URL**: https://mila-xi-six.vercel.app/ (always shows production)
+- **Domain**: madeinlatinamerica.com (DNS pending connection to Vercel)
 - **Repo**: https://github.com/zalucinc/mila (primary for Vercel)
 - **Mirror**: https://github.com/cluquesoto/mila
 
-## Workflow
+## Workflow (two-step: staging → production)
+
+### Default: push to staging first
 1. Edit files locally or via Claude Code
-2. `git add` → `git commit` → `git push origin main`
-3. Vercel auto-deploys within seconds
-4. Preview at https://mila-xi-six.vercel.app/
+2. Push to the `staging` branch: `git push origin staging`
+3. Vercel auto-generates a preview deployment for the staging branch
+4. Review at the staging preview URL
+5. When approved, merge staging into main: `git checkout main && git merge staging && git push origin main`
+6. Production auto-deploys to madeinlatinamerica.com
+
+### When the team says "sube los cambios a staging"
+- Push to the `staging` branch, NOT `main`
+- This lets them preview before going live
+
+### When the team says "publica los cambios" or "sube a produccion"
+- Merge `staging` into `main` and push `main`
+- This makes changes live on madeinlatinamerica.com
+
+### Quick fixes (skip staging)
+- For urgent fixes, pushing directly to `main` is acceptable
+- When the team says "sube los cambios al sitio" without mentioning staging, push to `staging` and let them know: "Los cambios estan en staging para que los revises. Cuando estes listo, decime 'publica a produccion'"
 
 ## For New Contributors
 1. Clone: `git clone https://github.com/zalucinc/mila.git`
-2. Open in Claude Code: `cd mila && claude`
-3. Make changes, commit, push — site auto-deploys
-4. For local preview: `python3 -m http.server 3000 --directory .`
+2. Open in Claude Code desktop app
+3. Make changes, push to `staging` to preview, merge to `main` to publish
+4. See GUIA-EQUIPO-MILA.md for the full Spanish guide
