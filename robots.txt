@@ -1,5 +1,5 @@
 # MILA — Made in Latin America
-# https://mila-xi-six.vercel.app/
+# https://madeinlatinamerica.com/
 
 User-agent: *
 Allow: /
@@ -23,4 +23,4 @@ Allow: /
 User-agent: Applebot-Extended
 Allow: /
 
-Sitemap: https://mila-xi-six.vercel.app/sitemap.xml
+Sitemap: https://madeinlatinamerica.com/sitemap.xml

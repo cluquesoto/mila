@@ -41,11 +41,31 @@ Mila is a cultural fashion platform and living archive of Latin American fashion
 
 ## Deployment
 - **Hosting**: Vercel (auto-deploys from GitHub)
+- **Vercel team**: `mila-f149670b` — project `mila` (`prj_2wonebeeBh5ZUItM1351SbUs3JYQ`)
 - **Production URL**: madeinlatinamerica.com (auto-deploys from `main` branch)
 - **Staging URL**: Vercel generates a preview URL for the `staging` branch (check Vercel dashboard for the URL)
 - **Fallback URL**: https://mila-xi-six.vercel.app/ (always shows production)
-- **Domain**: madeinlatinamerica.com (DNS pending connection to Vercel)
-- **Repo**: https://github.com/zalucinc/mila (primary for Vercel)
+
+### IMPORTANT: Vercel only watches `zalucinc/mila`
+Vercel's git integration is connected to **`zalucinc/mila`, branch `main`**. Pushing only to
+the `cluquesoto` mirror does NOT deploy — this silently stranded 4 commits for 110 days.
+
+`origin` in this local clone is configured to push to **both** repos, so a plain
+`git push origin main` updates the mirror and triggers a deploy. Verify with
+`git remote -v | grep push` — two push URLs should be listed. If you ever re-clone,
+re-add the second push URL or push to `zalucinc` explicitly.
+
+### Domain status
+- Registered at **NameBright** (nameservers `ns1/ns2.namebrightdns.com`) — NOT bought through
+  Vercel, so Vercel cannot manage its DNS.
+- `madeinlatinamerica.com` and `www.` are both added to the Vercel project and verified.
+- **Pending**: DNS records at NameBright still point to a parking page. Needs (at NameBright):
+  - Apex `@` → A records `216.150.1.1` and `216.150.16.1` (replace the two existing A records)
+  - `www` → CNAME `4f71ca35c01adecd.vercel-dns-016.com.` (replace the `comingsoon.namebright.com` CNAME)
+- Check status: `vercel domains inspect madeinlatinamerica.com --scope mila-f149670b`
+
+### Repos
+- **Primary (Vercel-connected)**: https://github.com/zalucinc/mila
 - **Mirror**: https://github.com/cluquesoto/mila
 
 ## Workflow (two-step: staging → production)

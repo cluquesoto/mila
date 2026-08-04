@@ -11,11 +11,11 @@
 
 ## Site Pages
 
-- [Home](https://mila-xi-six.vercel.app/) — Main landing page with the archivo (archive grid), calendario (event calendar), and brand directory
-- [Culture](https://mila-xi-six.vercel.app/culture.html) — Cultura & Contexto: interviews, essays, and analysis connecting fashion with identity, territory, tradition, and community
-- [Fashion](https://mila-xi-six.vercel.app/fashion.html) — Editorials, lookbooks, brand profiles, and drops from Latin American designers
-- [RSVP](https://mila-xi-six.vercel.app/rsvp.html) — Upcoming events including pop-ups and conversatorios
-- [Studio](https://mila-xi-six.vercel.app/studio.html) — MILA-orchestrated brand collaborations and creative partnerships
+- [Home](https://madeinlatinamerica.com/) — Main landing page with the archivo (archive grid), calendario (event calendar), and brand directory
+- [Culture](https://madeinlatinamerica.com/culture.html) — Cultura & Contexto: interviews, essays, and analysis connecting fashion with identity, territory, tradition, and community
+- [Fashion](https://madeinlatinamerica.com/fashion.html) — Editorials, lookbooks, brand profiles, and drops from Latin American designers
+- [RSVP](https://madeinlatinamerica.com/rsvp.html) — Upcoming events including pop-ups and conversatorios
+- [Studio](https://madeinlatinamerica.com/studio.html) — MILA-orchestrated brand collaborations and creative partnerships
 
 ## Key Upcoming Events
 
@@ -40,4 +40,4 @@ MILA stands for "Made in Latin America." The platform was built from the 2026 Br
 
 Languages: Spanish (primary content), English (descriptions and international reach)
 Domain: madeinlatinamerica.com (pending DNS connection)
-Current URL: https://mila-xi-six.vercel.app/
+Current URL: https://madeinlatinamerica.com/
