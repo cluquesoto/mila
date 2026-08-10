@@ -36,6 +36,9 @@ jobs:
           config.fallback_models: '["anthropic/claude-haiku-4-5-20251001"]'
           config.propagate_tool_errors: "true"
           config.persistent_inline_comments: "true"
+          config.repo_context_files: '["AGENTS.md", "PR_REVIEW_GUIDANCE.md"]'
+          config.repo_context_from_default_branch: "true"
+          config.patch_extension_skip_types: "[]"
 
           github_action_config.auto_review: "true"
           github_action_config.auto_describe: "false"
